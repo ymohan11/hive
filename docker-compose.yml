@@ -3,7 +3,7 @@ services:
   honeycomb:
     build:
       context: ./honeycomb
-      target: production
+      #target: production
       args:
         VITE_API_URL: ${VITE_API_URL:-http://localhost:4000}
     container_name: honeycomb-frontend
@@ -20,7 +20,7 @@ services:
   hive:
     build:
       context: ./hive
-      target: production
+      #target: production
       args:
         NPM_TOKEN: ${NPM_TOKEN:-}
     container_name: honeycomb-backend
